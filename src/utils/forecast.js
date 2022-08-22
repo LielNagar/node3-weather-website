@@ -14,7 +14,8 @@ const forecast=(lati,longi,callback)=>{
                 forecast:"It is " +body.current.weather_descriptions[0]+" out there!",
                 temp:body.current.temperature,
                 realDeal:body.current.feelslike,
-                precip:body.current.precip
+                precip:body.current.precip,
+                humidity: body.current.humidity
             }
             callback(undefined,data)
         }

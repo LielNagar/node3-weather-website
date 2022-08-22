@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit',(e)=>{
         } 
         else {
             dataP.textContent=data.location +" weather for today:\n" +data.forecastData.forecast+ " and the temp is: "
-            +data.forecastData.temp +" with a " + data.forecastData.precip +"% chance to rain."
+            +data.forecastData.temp +" with a " + data.forecastData.precip +"% chance to rain. The humidity is: " + data.forecastData.humidity+"."
             errorP.textContent=""
         }
     })
